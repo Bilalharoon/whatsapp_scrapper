@@ -1,3 +1,13 @@
+##############################
+# created by Bilal Haroon
+# 
+# purpose: write all whatsapp contactcts to html file
+# 
+# bharoon@acceducate.com
+##############################
+
+
+
 # allows you to controll chrome
 from selenium import webdriver
 # html parser
