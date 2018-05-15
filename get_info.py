@@ -46,10 +46,11 @@ def get_numbers():
         # get all the chidren
         child = number.findChild()
         
-        # if child is a phone number i.e +1 (123) 456-789
-        if child.text[0] == '+':
-            numbers.append(child.text)
-            print(child.text)
+        if child is not None:
+            # if child is a phone number i.e +1 (123) 456-789
+            if child.text[0] == '+':
+                numbers.append(child.text)
+                print(child.text)
     return numbers
 
 
@@ -57,8 +58,6 @@ def main():
     get_names()
     print("=====================================================")
     get_numbers()
-    
-            
     
 
 if __name__ == '__main__':

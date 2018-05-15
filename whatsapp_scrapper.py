@@ -28,7 +28,6 @@ sleep(15)
 def parse():
         
     f = open("test.html", "a", encoding='utf8')
-        # f.write(str(contact) + "\n<br>")
     f.write(str(driver.page_source))
     f.close()
 
