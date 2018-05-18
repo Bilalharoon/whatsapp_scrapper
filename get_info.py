@@ -33,7 +33,7 @@ def get_names():
             if child.get('class') == ['_1qP8m']:
                     
                     group_names.append(child.text)
-                    print(child.text)
+                    # print(child.text)
     return group_names
 
 
@@ -48,16 +48,20 @@ def get_numbers():
         
         if child is not None:
             # if child is a phone number i.e +1 (123) 456-789
-            if child.text[0] == '+':
+            if child.text[:2] == '+1':
                 numbers.append(child.text)
-                print(child.text)
+                # print(child.text)
     return numbers
 
 
 def main():
-    get_names()
+    for name in get_names():
+        print(name)
+    
     print("=====================================================")
-    get_numbers()
+    
+    for number in get_numbers():
+        print(number)
     
 
 if __name__ == '__main__':

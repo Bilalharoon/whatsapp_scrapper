@@ -1,7 +1,7 @@
 ##############################
 # created by Bilal Haroon
 # 
-# purpose: write all whatsapp contactcts to html file
+# purpose: write all whatsapp contacts to html file
 # 
 # bharoon@acceducate.com
 ##############################
@@ -23,7 +23,7 @@ driver.get("https://web.whatsapp.com/")
 
 
 # sleep so user can scan barcode
-sleep(15)
+sleep(20)
 
 def parse():
         
