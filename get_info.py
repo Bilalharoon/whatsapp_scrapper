@@ -1,7 +1,9 @@
 ##############################
 # created by Bilal Haroon
+# 
 # purpose: get all whatsapp contacts
-# bharoon@acceducate.com
+# 
+# email: bharoon@acceducate.com
 ##############################
 
 

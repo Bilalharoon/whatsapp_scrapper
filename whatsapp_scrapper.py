@@ -3,7 +3,7 @@
 # 
 # purpose: write all whatsapp contacts to html file
 # 
-# bharoon@acceducate.com
+# email: bharoon@acceducate.com
 ##############################
 
 
@@ -22,8 +22,13 @@ driver = webdriver.Chrome()
 driver.get("https://web.whatsapp.com/")
 
 
-# sleep so user can scan barcode
-sleep(20)
+# wait so user can scan barcode
+try:
+    input("Press Enter to continue...")
+except EOFError:
+    print("something went wrong...")
+except KeyboardInterrupt:
+    print("good bye")
 
 def parse():
         
